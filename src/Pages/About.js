@@ -2,8 +2,7 @@
 import React from "react";
 import "../app/globals.css";
 import Image from "next/image";
-import Aboutimage from "../../public/user.png";
-import Link from "next/link";
+import Aboutimage from "../../public/user.jpg";
 import { useState } from "react";
 
 const About = () => {
@@ -32,7 +31,8 @@ const About = () => {
   return (
     <div className="Grid Grid-cols-2 flex lg:mx-[10%] mx-4 my-[8%] justify-between" id='About'>
       <div className="w-[35%]">
-        <Image src={Aboutimage} className="w-full rounded-lg" />
+        <Image src={Aboutimage}
+        alt="No Image Founc" className="w-full rounded-lg" />
       </div>
       <div className="w-[60%] ">
         <p className="lg:text-[60px] text-[20px] font-bold">About Me</p>
@@ -62,12 +62,11 @@ const About = () => {
           <ul>
             <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">UI/UX </span><br /><div className="text-[10px] lg:text-[16px]">Designing Web/App interfaces</div> </li>
             <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">Web Development </span><br /><div className="text-[10px] lg:text-[16px]">Web App Development</div></li>
-            <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">App Development </span><br /><div className="text-[10px] lg:text-[16px]">Building Android/IOS Apps</div> </li>
           </ul>
         </div>
         <div className={section2Visible ? 'block' : 'hidden'}>
           <ul>
-            <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">June 2023 - Present </span><br /><div className="text-[10px] lg:text-[16px]">Web App Developer </div></li>
+            <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">June 2023 - Present </span><br /><div className="text-[10px] lg:text-[16px]">Web Developer </div></li>
             <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">Sep 2022 - June 2022 </span><br /> <div className="text-[10px] lg:text-[16px]">Senior Recruiter </div></li>
             <li className="my-[10px]"><span className="text-[#b54769] lg:text-[14px] text-[10px]">Nov 2019 - Aug 2022 </span><br /><div className="text-[10px] lg:text-[16px]">Senior Technical Support</div></li>
           </ul>
